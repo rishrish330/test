@@ -1,8 +1,8 @@
-nltk = "*"
-pandas = "*"
-tqdm = "*"
-matplotlib = "*"
-gensim = "*"
-scikit-learn = "*"
-openpyxl = "*"
-spacy = {extras = ["en_core_web_sm"],version = "*"}
+nltk == "*"
+pandas == "*"
+tqdm == "*"
+matplotlib == "*"
+gensim == "*"
+scikit-learn == "*"
+openpyxl == "*"
+spacy == {extras = ["en_core_web_sm"],version = "*"}
