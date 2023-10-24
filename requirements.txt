@@ -1,8 +1,8 @@
-nltk == "*"
-pandas == "*"
-tqdm == "*"
-matplotlib == "*"
-gensim == "*"
-scikit-learn == "*"
-openpyxl == "*"
-spacy == "*"
+nltk
+pandas
+tqdm
+matplotlib
+gensim
+scikit-learn
+openpyxl
+spacy
