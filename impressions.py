@@ -21,12 +21,12 @@ stop_words = set(stopwords.words('english'))
 
 from sklearn.metrics.pairwise import cosine_similarity
 
-@st.cache_resource
-def download_en_core_web_sm():
-    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+# @st.cache_resource
+# def download_en_core_web_sm():
+#     subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
 
 
-download_en_core_web_sm()
+# download_en_core_web_sm()
 
 
 def plot_graph_to_check_hashtags_impact(data_df, hashtag_col, imp_col):
@@ -84,7 +84,7 @@ def clean_text(text):
     return text
 
 def get_cosine_similarity(user_query, caption):
-    download_en_core_web_sm()
+    # download_en_core_web_sm()
     try:
         nlp = spacy.load("en_core_web_sm")
         embedding1 = nlp(clean_text(user_query)).vector
